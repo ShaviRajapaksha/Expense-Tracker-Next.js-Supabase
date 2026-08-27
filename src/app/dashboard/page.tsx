@@ -60,42 +60,42 @@ export default async function DashboardPage() {
 
       <main className="mx-auto max-w-7xl px-6 py-8">
         <div>
-          <h1 className="text-3xl font-bold">
+          <h1 className="text-3xl text-zinc-950 font-bold">
             Dashboard
           </h1>
 
-          <p className="mt-1 text-gray-500">
+          <p className="mt-1 text-zinc-950">
             Welcome, {user.email}
           </p>
         </div>
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           <div className="rounded-xl bg-white p-6 shadow-sm">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-zinc-950">
               Total Expenses
             </p>
 
-            <p className="mt-2 text-3xl font-bold">
+            <p className="mt-2 text-3xl font-bold text-zinc-600">
               ${total.toFixed(2)}
             </p>
           </div>
 
           <div className="rounded-xl bg-white p-6 shadow-sm">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-zinc-950">
               This Month
             </p>
 
-            <p className="mt-2 text-3xl font-bold">
+            <p className="mt-2 text-3xl font-bold text-zinc-600">
               ${monthlyTotal.toFixed(2)}
             </p>
           </div>
 
           <div className="rounded-xl bg-white p-6 shadow-sm">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-zinc-950">
               Number of Expenses
             </p>
 
-            <p className="mt-2 text-3xl font-bold">
+            <p className="mt-2 text-3xl font-bold text-zinc-600">
               {expenses.length}
             </p>
           </div>
@@ -103,17 +103,17 @@ export default async function DashboardPage() {
 
         <div className="mt-8 rounded-xl bg-white shadow-sm">
           <div className="border-b p-6">
-            <h2 className="text-xl font-semibold">
+            <h2 className="text-xl font-semibold text-zinc-950">
               Recent Expenses
             </h2>
           </div>
 
           {expenses.length === 0 ? (
-            <div className="p-8 text-center text-gray-500">
+            <div className="p-8 text-center text-zinc-950">
               No expenses yet.
             </div>
           ) : (
-            <div className="divide-y">
+            <div className="divide-y text-zinc-950">
               {expenses
                 .slice(0, 5)
                 .map((expense) => (
@@ -126,7 +126,7 @@ export default async function DashboardPage() {
                         {expense.title}
                       </p>
 
-                      <p className="text-sm text-gray-500">
+                      <p className="text-sm text-zinc-950">
                         {expense.category?.[0]?.name ??
                           "Uncategorized"}{" "}
                         •{" "}
