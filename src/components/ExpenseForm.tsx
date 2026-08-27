@@ -38,23 +38,23 @@ export default function ExpenseForm({
         }
       }}
       id="expense-form"
-      className="space-y-5 rounded-xl bg-white p-6 shadow-sm"
+      className="space-y-5 rounded-xl bg-white p-6 shadow-sm text-zinc-900"
     >
       <div>
-        <label className="mb-2 block text-sm font-medium">
+        <label className="mb-2 block text-sm font-medium text-zinc-900">
           Title
         </label>
 
         <input
           name="title"
           required
-          className="w-full rounded-lg border px-4 py-3"
+          className="w-full rounded-lg border px-4 py-3 text-zinc-900"
           placeholder="Lunch"
         />
       </div>
 
       <div>
-        <label className="mb-2 block text-sm font-medium">
+        <label className="mb-2 block text-sm font-medium text-zinc-900">
           Amount
         </label>
 
@@ -70,13 +70,13 @@ export default function ExpenseForm({
       </div>
 
       <div>
-        <label className="mb-2 block text-sm font-medium">
+        <label className="mb-2 block text-sm font-medium text-zinc-900">
           Category
         </label>
 
         <select
           name="category_id"
-          className="w-full rounded-lg border px-4 py-3"
+          className="w-full rounded-lg border px-4 py-3 text-zinc-900"
           defaultValue=""
         >
           <option value="">
@@ -95,7 +95,7 @@ export default function ExpenseForm({
       </div>
 
       <div>
-        <label className="mb-2 block text-sm font-medium">
+        <label className="mb-2 block text-sm font-medium text-zinc-900">
           Date
         </label>
 
@@ -103,19 +103,19 @@ export default function ExpenseForm({
           name="expense_date"
           type="date"
           required
-          className="w-full rounded-lg border px-4 py-3"
+          className="w-full rounded-lg border px-4 py-3 text-zinc-900"
         />
       </div>
 
       <div>
-        <label className="mb-2 block text-sm font-medium">
+        <label className="mb-2 block text-sm font-medium text-zinc-900">
           Description
         </label>
 
         <textarea
           name="description"
           rows={4}
-          className="w-full rounded-lg border px-4 py-3"
+          className="w-full rounded-lg border px-4 py-3 text-zinc-900"
           placeholder="Optional description..."
         />
       </div>
