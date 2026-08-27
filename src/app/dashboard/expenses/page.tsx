@@ -43,17 +43,17 @@ export default async function ExpensesPage() {
       <Navbar />
 
       <main className="mx-auto max-w-7xl px-6 py-8">
-        <h1 className="text-3xl font-bold">
+        <h1 className="text-3xl font-bold text-zinc-900">
           Expenses
         </h1>
 
-        <p className="mt-1 text-gray-500">
+        <p className="mt-1 text-zinc-900">
           Add and manage your expenses.
         </p>
 
         <div className="mt-8 grid gap-8 lg:grid-cols-3">
           <div>
-            <h2 className="mb-4 text-xl font-semibold">
+            <h2 className="mb-4 text-xl font-semibold text-zinc-900">
               Add Expense
             </h2>
 
@@ -63,28 +63,28 @@ export default async function ExpensesPage() {
           </div>
 
           <div className="lg:col-span-2">
-            <h2 className="mb-4 text-xl font-semibold">
+            <h2 className="mb-4 text-xl font-semibold text-zinc-900">
               Expense History
             </h2>
 
             <div className="overflow-hidden rounded-xl bg-white shadow-sm">
               {expenses.length === 0 ? (
-                <div className="p-8 text-center text-gray-500">
+                <div className="p-8 text-center text-zinc-950">
                   No expenses found.
                 </div>
               ) : (
-                <div className="divide-y">
+                <div className="divide-y text-zinc-600">
                   {expenses.map((expense) => (
                     <div
                       key={expense.id}
                       className="flex items-center justify-between gap-4 p-5"
                     >
                       <div className="min-w-0">
-                        <p className="font-semibold">
+                        <p className="font-semibold text-zinc-900">
                           {expense.title}
                         </p>
 
-                        <p className="mt-1 text-sm text-gray-500">
+                        <p className="mt-1 text-sm text-zinc-950">
                           {expense.category?.[0]?.name ??
                             "Uncategorized"}
                           {" • "}
@@ -92,14 +92,14 @@ export default async function ExpensesPage() {
                         </p>
 
                         {expense.description && (
-                          <p className="mt-1 text-sm text-gray-400">
+                          <p className="mt-1 text-sm text-zinc-950">
                             {expense.description}
                           </p>
                         )}
                       </div>
 
                       <div className="flex shrink-0 items-center gap-4">
-                        <span className="font-semibold">
+                        <span className="font-semibold text-zinc-900">
                           $
                           {Number(
                             expense.amount
