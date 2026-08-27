@@ -43,11 +43,11 @@ export default function LoginPage() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-gray-100 px-4">
       <div className="w-full max-w-md rounded-2xl bg-white p-8 shadow-lg">
-        <h1 className="text-3xl font-bold">
+        <h1 className="text-3xl font-bold text-zinc-900">
           Welcome back
         </h1>
 
-        <p className="mt-2 text-gray-500">
+        <p className="mt-2 text-zinc-900">
           Login to your expense tracker.
         </p>
 
@@ -56,7 +56,7 @@ export default function LoginPage() {
           className="mt-8 space-y-5"
         >
           <div>
-            <label className="mb-2 block text-sm font-medium">
+            <label className="mb-2 block text-sm font-medium text-zinc-900">
               Email
             </label>
 
@@ -67,13 +67,13 @@ export default function LoginPage() {
               onChange={(e) =>
                 setEmail(e.target.value)
               }
-              className="w-full rounded-lg border px-4 py-3 outline-none focus:border-indigo-500"
+              className="w-full rounded-lg border px-4 py-3 outline-none focus:border-indigo-500 text-zinc-900"
               placeholder="you@example.com"
             />
           </div>
 
           <div>
-            <label className="mb-2 block text-sm font-medium">
+            <label className="mb-2 block text-sm font-medium text-zinc-900">
               Password
             </label>
 
@@ -84,7 +84,7 @@ export default function LoginPage() {
               onChange={(e) =>
                 setPassword(e.target.value)
               }
-              className="w-full rounded-lg border px-4 py-3 outline-none focus:border-indigo-500"
+              className="w-full rounded-lg border px-4 py-3 outline-none focus:border-indigo-500 text-zinc-900"
               placeholder="••••••••"
             />
           </div>
@@ -104,7 +104,7 @@ export default function LoginPage() {
           </button>
         </form>
 
-        <p className="mt-6 text-center text-sm text-gray-500">
+        <p className="mt-6 text-center text-sm text-zinc-900">
           Don't have an account?{" "}
           <Link
             href="/register"
