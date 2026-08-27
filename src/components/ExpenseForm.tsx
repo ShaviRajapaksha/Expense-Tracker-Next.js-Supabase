@@ -64,7 +64,7 @@ export default function ExpenseForm({
           step="0.01"
           min="0.01"
           required
-          className="w-full rounded-lg border px-4 py-3"
+          className="w-full rounded-lg border px-4 py-3 text-zinc-900"
           placeholder="25.00"
         />
       </div>
